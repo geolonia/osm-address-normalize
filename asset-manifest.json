@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/osm-address-normalize/static/js/main.bfc8df0e.chunk.js",
+    "main.js.map": "/osm-address-normalize/static/js/main.bfc8df0e.chunk.js.map",
+    "runtime-main.js": "/osm-address-normalize/static/js/runtime-main.b3740b1f.js",
+    "runtime-main.js.map": "/osm-address-normalize/static/js/runtime-main.b3740b1f.js.map",
+    "static/css/2.383c0125.chunk.css": "/osm-address-normalize/static/css/2.383c0125.chunk.css",
+    "static/js/2.21a1af88.chunk.js": "/osm-address-normalize/static/js/2.21a1af88.chunk.js",
+    "static/js/2.21a1af88.chunk.js.map": "/osm-address-normalize/static/js/2.21a1af88.chunk.js.map",
+    "static/js/3.6fa32b25.chunk.js": "/osm-address-normalize/static/js/3.6fa32b25.chunk.js",
+    "static/js/3.6fa32b25.chunk.js.map": "/osm-address-normalize/static/js/3.6fa32b25.chunk.js.map",
+    "index.html": "/osm-address-normalize/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/osm-address-normalize/static/css/2.383c0125.chunk.css.map",
+    "static/js/2.21a1af88.chunk.js.LICENSE.txt": "/osm-address-normalize/static/js/2.21a1af88.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3740b1f.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.21a1af88.chunk.js",
+    "static/js/main.bfc8df0e.chunk.js"
+  ]
+}
