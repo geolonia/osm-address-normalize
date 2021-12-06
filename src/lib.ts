@@ -34,7 +34,7 @@ export const nja2osm: (input: NormalizeResult) => OsmAddress = (input) => {
 
   if (input.pref) output['addr:province'] = input.pref;
   if (input.city) {
-    const countyMatch = input.city.match(/^([^郡]*郡)(.*)$/);
+    const countyMatch = input.city.match(/^([^郡]+郡)(.*)$/);
     const suburbMatch = input.city.match(/^([^市]+市)?([^区]+区)$/);
     if (countyMatch) {
       output['addr:county'] = countyMatch[1];
