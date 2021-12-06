@@ -41,6 +41,13 @@ const App: React.FC = () => {
 
   return (
     <div className="container">
+      <h1 className="my-4"><code>@geolonia/osm-address-normalize</code></h1>
+      <p>
+        <a href="https://github.com/geolonia/normalize-japanese-addresses" target="_blank" rel="noreferrer noopener"><code>@geolonia/normalize-japanese-addresses</code></a>を使って住所を正規化し、OpenStreetMap用のタグに分離させるためのツールです。<a href="https://github.com/geolonia/osm-address-normalize/" target="_blank" rel="noreferrer noopener">詳細は GitHub をご覧ください。</a>
+      </p>
+      <p>
+        正規化が失敗したり、出力に問題があったりする場合は<a href="https://github.com/geolonia/osm-address-normalize/issues/new" target="_blank" rel="noreferrer noopener">こちらで報告</a>していただけると助かります。
+      </p>
       <form onSubmit={onSubmit} className="mb-3 mt-5">
         <div className="mb-3">
           <input type="text" name="input" className="form-control" placeholder="住所を入力してください。" />
@@ -50,14 +57,18 @@ const App: React.FC = () => {
       { typeof result !== 'undefined' && <dl className="row">
         <dt className="col-sm-2 text-end">入力</dt>
         <dd className="col-sm-10">
-          <p>{result.input}</p>
-          <p>正規化レベル: [{result.normalized.level}] {levels[result.normalized.level]}</p>
+          {result.input}
         </dd>
 
-        <dt className="col-sm-2 text-end">NJA正規化</dt>
-        <dd className="col-sm-10"><pre>{JSON.stringify(result.normalized, undefined, 2)}</pre></dd>
+        <dt className="col-sm-2 text-end">
+          NJA出力
+        </dt>
+        <dd className="col-sm-10">
+          <p>[{result.normalized.level}] {levels[result.normalized.level]}</p>
+          <pre>{JSON.stringify(result.normalized, undefined, 2)}</pre>
+        </dd>
 
-        <dt className="col-sm-2 text-end">OSM正規化</dt>
+        <dt className="col-sm-2 text-end">OSMタグ形式</dt>
         <dd className="col-sm-10"><pre>{formatOsmAddr(result.osmNormalized)}</pre></dd>
       </dl> }
     </div>
